@@ -1,4 +1,7 @@
+using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using Newtonsoft.Json;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +21,24 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject); //Si hay otro GameManager lo destruye.
+        }
+        if (File.Exists("si.json"))
+        {
+            //List<Pregunta> l = new List<Pregunta>();
+            //Pregunta p1 = new Pregunta();
+            //p1.enunciado = "aaaa";
+            //p1.a = "a";
+            //Pregunta p2 = new Pregunta();
+            //p2.enunciado = "bbbb";
+            //l.Add(p1);
+            //l.Add(p2);
+            //StreamWriter streamWriter = new StreamWriter("no.json");
+            //streamWriter.Write(JsonConvert.SerializeObject(l));
+            //streamWriter.Close();   
+            StreamReader sr = new StreamReader("no.json");
+            string fileContent = sr.ReadToEnd();
+            List<Pregunta> preguntas = JsonConvert.DeserializeObject<List<Pregunta>>(fileContent);
+            sr.Close();
         }
     }
 
