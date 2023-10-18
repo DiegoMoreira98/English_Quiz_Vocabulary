@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        GetPunt();
         if (!instance) //instance  != null  //Detecta que no haya otro GameManager en la escena.
         {
             instance = this;
