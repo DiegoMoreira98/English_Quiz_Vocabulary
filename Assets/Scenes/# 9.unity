@@ -569,14 +569,14 @@ RectTransform:
   m_GameObject: {fileID: 292502343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5714684, y: 2.5714684, z: 2.5714684}
+  m_LocalScale: {x: 2.0941525, y: 2.0941525, z: 2.0941525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1935033726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 257.7, y: 8.7}
+  m_AnchoredPosition: {x: 10.9, y: -14.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292502345
@@ -855,7 +855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.5, y: -67.5}
+  m_AnchoredPosition: {x: 227.7, y: -21.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &492221238
@@ -902,30 +902,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1297719004}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 922654183}
+        m_TargetAssemblyTypeName: Buttonfunctions, Assembly-CSharp
         m_MethodName: AddPunt
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 100
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 922654183}
-        m_TargetAssemblyTypeName: Buttonfunctions, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: '# 10'
-          m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
 --- !u!114 &492221239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,7 +1656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.7, y: -21.8}
+  m_AnchoredPosition: {x: -221.4, y: -21.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1150783807
@@ -1715,16 +1703,28 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1297719004}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 922654183}
+        m_TargetAssemblyTypeName: Buttonfunctions, Assembly-CSharp
         m_MethodName: AddPunt
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 100
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 922654183}
+        m_TargetAssemblyTypeName: Buttonfunctions, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: '# 10'
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &1150783808

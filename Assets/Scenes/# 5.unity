@@ -1606,8 +1606,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1297719004}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 922654183}
+        m_TargetAssemblyTypeName: Buttonfunctions, Assembly-CSharp
         m_MethodName: AddPunt
         m_Mode: 3
         m_Arguments:

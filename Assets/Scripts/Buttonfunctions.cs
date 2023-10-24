@@ -5,10 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class Buttonfunctions : MonoBehaviour
 {
-    public GameObject PauseMenu;
-    public GameObject Shop;
     public AudioClip clip;
+    public AudioClip buttonclip;
 
+    public void Start()
+    {      
+        GetPunt();
+    }
+    public void GetPunt()
+    {
+        GameManager.instance.GetPunt();
+    }
+    public void AddPunt(int value)
+    {
+        GameManager.instance.AddPunt(value);
+    }
     public void PauseTimer() //Pausamos el timer.
     {
         Time.timeScale = 0;
@@ -21,21 +32,9 @@ public class Buttonfunctions : MonoBehaviour
     {
        GameManager.instance.ResetPunt(0);
     }
-    public void PauseMenuoON() //Activa el menú de pausa.
+    public void ButtonSound()
     {
-        PauseMenu.SetActive(true);
-    }
-    public void PauseMenuoOFF() //Desactiva el menú de pausa.
-    {
-        PauseMenu.SetActive(false);
-    }
-    public void ShopMenuON() //Activa el menú de tienda.
-    {
-        Shop.SetActive(true);
-    }
-    public void ShopMenuOFF() //Desactiva el menú de tienda.
-    {
-        Shop.SetActive(false);
+        AudioManager.instance.PlayAudio(buttonclip,1);
     }
     public void ChangeScene(string name) //Cambiamos a la escena designada, en este caso iria al menu principal y limpiamos la lista de audios.
     {
@@ -50,11 +49,11 @@ public class Buttonfunctions : MonoBehaviour
    
     public void StopBackgroundMusic()
     {
-        //AudioManager.instance.StopBackgroundMusic();
+        AudioManager.instance.StopBackgroundMusic();
     }
     public void StartBackgroundMusic()
     {
-        //AudioManager.instance.PlayBackgroundMusic(clip);
+        AudioManager.instance.PlayBackgroundMusic(clip);
     }
         
 }

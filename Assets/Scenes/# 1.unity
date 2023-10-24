@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 492221238}
   - component: {fileID: 492221241}
   m_Layer: 5
-  m_Name: B
+  m_Name: FALSE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1538,7 +1538,7 @@ GameObject:
   - component: {fileID: 1150783807}
   - component: {fileID: 1150783810}
   m_Layer: 5
-  m_Name: A
+  m_Name: TRUE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1608,8 +1608,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1297719004}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 922654183}
+        m_TargetAssemblyTypeName: Buttonfunctions, Assembly-CSharp
         m_MethodName: AddPunt
         m_Mode: 3
         m_Arguments:

@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        GetPunt();
+        //GetPunt();
+
         if (!instance) //instance  != null  //Detecta que no haya otro GameManager en la escena.
         {
             instance = this;
@@ -22,13 +23,13 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject); //Si hay otro GameManager lo destruye.
         }
-        if (File.Exists("si.json"))
-        {
-            StreamReader sr = new StreamReader("no.json");
-            string fileContent = sr.ReadToEnd();
-            List<Pregunta> preguntas = JsonConvert.DeserializeObject<List<Pregunta>>(fileContent);
-            sr.Close();
-        }
+        //if (File.Exists("si.json"))
+        //{
+        //    StreamReader sr = new StreamReader("no.json");
+        //    string fileContent = sr.ReadToEnd();
+        //    List<Pregunta> preguntas = JsonConvert.DeserializeObject<List<Pregunta>>(fileContent);
+        //    sr.Close();
+        //}
     }
 
     public void AddPunt(int value) //Agrega la cantidad de puntos designada.
