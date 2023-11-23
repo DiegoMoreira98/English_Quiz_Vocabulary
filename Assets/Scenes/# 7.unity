@@ -1208,7 +1208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &654445417
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1373,9 +1373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 412da5094fcd120499579b98150ede80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenu: {fileID: 0}
-  Shop: {fileID: 0}
   clip: {fileID: 0}
+  buttonclip: {fileID: 0}
 --- !u!4 &922654184
 Transform:
   m_ObjectHideFlags: 0
@@ -1618,16 +1617,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1297719004}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: AddPunt
-        m_Mode: 3
+      - m_Target: {fileID: 922654183}
+        m_TargetAssemblyTypeName: Buttonfunctions, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: '# 8'
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &1150783808
